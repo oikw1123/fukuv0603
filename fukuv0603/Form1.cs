@@ -24,13 +24,33 @@ namespace fukuv0603
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            textBox1.Left += int.Parse(textBox1 .Text);
-            textBox2.Top = int.Parse(textBox1.Text); 
+            label1.Left += int.Parse(textBox1 .Text);
+            label1.Top += int.Parse(textBox1.Text); 
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "0";
+            textBox2.Text = "-5";
+                }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "-5";
+            textBox2.Text = "0";
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "-5";
+            textBox2.Text = "0";
+        }
+
+    }
     }
 }
